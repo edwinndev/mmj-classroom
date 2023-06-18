@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-lg-2 col-md-3 col-sm-4 classroom-scrollbar">
+    <a *ngFor="let item of materials" class="class-item" href="">
+      <span>{{ item.title }}</span>
+      <div class="class-indicator"></div>
+    </a>
+  </div>
+  <div class="col-lg-10 col-md-9 col-sm-8 ps-5">
+    <a class="class-item">
+      <span class="fs-5">Descargar material de clase</span>
+      <span class="material-symbols-outlined fs-1">download</span>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="demo-wrap">
+  <div class="demo-content">
+    <div class="login-box">
+      <form
+        autocomplete="off"
+        [formGroup]="form"
+        (ngSubmit)="login()">
+
+        <div class="user-box">
+          <input 
+            formControlName="username"  
+            type="text"
+            name="user"
+            required>
+          <label>USUARIO</label>
+        </div>
+        <div class="user-box">
+          <input
+            formControlName="password"
+            type="password"
+            name="password"
+            required>
+          <label>CONTRASEÑA</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="remember">
+          <label class="form-check-label text-white" for="remember">
+            RECORDAR USUARIO
+          </label>
+        </div>
+        <div class="user-box mt-3">
+          <button type="submit" class="btn btn-secondary w-100">ACCEDER</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

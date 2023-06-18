@@ -1,0 +1,12 @@
+<div class="courses-content classroom-scrollbar">
+  <div class="row">
+    <div *ngFor="let item of courses" class="col-lg-3 col-md-4 col-sm-6">
+      <a [routerLink]="[item.id]">
+        <div class="generic-card" (click)="getCourseInfo()">
+          <p><img class="normal-icon" src="../../../assets/icons/plus.png" alt="NO IMAGE"></p>
+          <p>{{ item.title }}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,193 @@
+.classroom-scrollbar::-webkit-scrollbar {
+  width: 15px;
+}
+.classroom-scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: var(--mmj-dark);
+}
+.classroom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--mmj-primary);
+}
+.classroom {
+  padding: 1rem;
+  display: flex;
+  height: 100vh;
+}
+.classroom-sidebar {
+  width: 6.6rem;
+  height: 100%;
+  margin-right: 20px;
+  background-color: var(--mmj-dark);
+  border-radius: 20px;
+}
+.classroom-sidebar-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+a {
+  color: var(--mmj-white);
+}
+.classroom-sidebar-menu p {
+  display: none;
+}
+.classroom-icon {
+  height: 40px;
+  width: 40px;
+}
+.classroom-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 2rem;
+  background-color: var(--mmj-light);
+}
+.courses-content {
+  border-radius: 1rem;
+  max-height: 83vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.header-card {
+  display: flex;
+  width: max-content;
+  height: min-content;
+  padding: 5px 20px 5px 5px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--mmj-grey);
+}
+.header-card img {
+  height: 30px;
+  width: 25px;
+}
+.header-circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: var(--mmj-dark);
+}
+@media (max-width: 1200px) {
+  .classroom {
+    padding: 0;
+    display: block;
+  }
+  .classroom-sidebar {
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 10px 10px 0 0;
+    height: min-content;
+    position: fixed;
+    bottom: 0;
+  }
+  .classroom-sidebar-menu {
+    flex-direction: row;
+  }
+  .sidebar-item-link p {
+    display: flex;
+    font-size: 0.8rem;
+  }
+  .sidebar-item-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .classroom-content {
+    border-radius: 0;
+    height: max-content;
+    padding: 1rem 1rem 3.5rem 1rem;
+  }
+}
+
+/********************* HOME Classroom *******************/
+.home-content {
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mmj-dark);
+}
+.home-lateral-card {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  border-radius: 15px 5px 5px 15px;
+  background-color: var(--mmj-grey);
+  overflow-y: hidden;
+}
+.home-lateral-card-x {
+  width: 100%;
+  overflow-y: auto;
+  max-height: 200px;
+  padding-bottom: 1rem;
+}
+.home-alert {
+  border-bottom: 2px solid var(--mmj-dark);
+}
+@media (max-width: 1200px) {
+  .home-content {
+    height: 400px;
+    border-radius: 10px;
+  }
+  .home-lateral-card {
+    border-radius: 1rem 5px 5px 1rem;
+  }
+}
+@media (max-width: 1498px) {
+  .home-lateral-card {
+    max-height: 550px;
+  }
+}
+
+
+/********************* Materiales de clase *******************/
+.class-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: var(--mmj-dark);
+}
+.class-indicator {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid var(--mmj-dark);
+}
+.class-indicator:hover {
+  border-color: var(--mmj-primary);
+}
+
+/********************* Videos de clase *******************/
+.class-video-frame {
+  height: 700px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: var(--mmj-dark);
+}
+@media (max-width: 1200px) {
+  .class-video-frame {
+    height: 400px;
+  }
+}
+
+.course-icon {
+  height: 110px;
+  width: 130px;
+}
+
+.normal-icon {
+  height: 70px;
+  width: 70px;
+}

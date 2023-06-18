@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "mmj",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -23,9 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/styles/styles.css",
+              "src/assets/styles/classroom.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/index.js"
+            ]
           },
           "configurations": {
             "production": {

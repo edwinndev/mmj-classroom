@@ -1,0 +1,10 @@
+<div class="row">
+  <div *ngFor="let item of menu" class="col-lg-3 col-md-4 col-sm-6">
+    <a [routerLink]="[item.link]" (click)="change(item.label)">
+      <div class="generic-card">
+        <p><img class="course-icon" [src]="'../../../../assets/icons/'+[item.icon]" alt=""></p>
+        <p>{{ item.label }}</p>
+      </div>
+    </a>
+  </div>
+</div>
